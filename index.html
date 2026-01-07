@@ -19,6 +19,21 @@
         .icon-box:hover .icon-bg {
             box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
         }
+        .feature-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .feature-card .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -140,69 +155,193 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Grid - 4 Detailed Sections -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-16">
-                <div>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Images that load in milliseconds.</h2>
-                    <p class="text-gray-600 mb-6">Automatic optimization for every visual asset on your site.</p>
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Feature 1: Image Optimization -->
+                <div class="feature-card bg-gray-50 rounded-2xl p-8">
+                    <div class="flex items-start mb-6">
+                        <div class="feature-icon w-16 h-16 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Images that load in milliseconds.</h3>
+                            <p class="text-gray-600">Automatic optimization for every visual asset on your site.</p>
+                        </div>
+                    </div>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Smaller image files with no visible quality loss</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Faster image loading on mobile and slow connections</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Images load smoothly as shoppers scroll</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Correct image sizes for every device automatically</span>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Clean code that just runs faster.</h2>
-                    <p class="text-gray-600 mb-6">Smart optimization that improves performance instantly.</p>
+
+                <!-- Feature 2: Code Optimization -->
+                <div class="feature-card bg-gray-50 rounded-2xl p-8">
+                    <div class="flex items-start mb-6">
+                        <div class="feature-icon w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Clean code that just runs faster.</h3>
+                            <p class="text-gray-600">Smart optimization that improves performance instantly.</p>
+                        </div>
+                    </div>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Fewer scripts slowing down your pages</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Faster load times across your entire store</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Less background code competing for resources</span>
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-cyan-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-purple-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             <span class="text-gray-700">Cleaner performance without unnecessary overhead</span>
                         </li>
                     </ul>
+                </div>
+
+                <!-- Feature 3: Speed Technologies -->
+                <div class="feature-card bg-gray-50 rounded-2xl p-8">
+                    <div class="flex items-start mb-6">
+                        <div class="feature-icon w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Built for speed. Scaled for growth.</h3>
+                            <p class="text-gray-600">Fast loading no matter how many visitors you have.</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Fast delivery of pages worldwide</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Smarter loading for repeat visits</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Smaller page sizes for quicker loads</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-emerald-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Faster connections to third party tools</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4: Analytics & Monitoring -->
+                <div class="feature-card bg-gray-50 rounded-2xl p-8">
+                    <div class="flex items-start mb-6">
+                        <div class="feature-icon w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Performance data you can trust and verify.</h3>
+                            <p class="text-gray-600">Clear visibility into how your store performs over time.</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Clear before and after speed results</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Google PageSpeed integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Mobile vs Desktop insights</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Competitor comparison</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm">
+                <div class="flex items-start mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mr-4 flex-shrink-0">
+                        R
+                    </div>
+                    <div>
+                        <p class="text-xl text-gray-700 mb-4 italic">"We boosted our conversions and increased sales just by working with PodSpeedRescue."</p>
+                        <p class="font-semibold text-gray-900">Rav Sandhu</p>
+                        <p class="text-gray-600">Owner - Vitrectomy Rentals Inc.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,8 +389,13 @@
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
                 <p>Copyright © 2025 PodSpeedRescue. All rights reserved.</p>
+
             </div>
+
         </div>
+
     </footer>
+
 </body>
+
 </html>
